@@ -46,9 +46,9 @@ variable "tags" {
   description = "Additional tags (e.g. `map('BusinessUnit','XYZ')`"
 }
 
-variable "security_groups" {
+variable "security_group_ids" {
   type        = list(string)
-  description = "Security group IDs to allow access to the EFS"
+  description = "Security group IDs to apply to the EFS mounts"
 }
 
 variable "vpc_id" {
